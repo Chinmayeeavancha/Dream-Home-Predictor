@@ -1,22 +1,3 @@
-## 💡 Future Roadmap
-- [ ] Connect to a live real estate API (like Zillow or Redfin) for real-time data.
-- [ ] Add a "Dark Mode" toggle for better accessibility.
-- [ ] Implement advanced EDA profiling (e.g., correlation heatmaps).
-- [ ] Expand prediction inputs to include neighborhood safety scores and school district ratings.
-
----
-
-## 👩‍💻 Author
-
-**Chinmayee Avancha**
-* Undergraduate Computer Science Engineering Student
-* Aspiring UI/UX Designer & Data Analyst
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/chinmayee-avancha)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=flat&logo=github)](httpsHere is a professional, well-structured `README.md` for the **DreamHome Analytics** project. It highlights both her technical data science skills and her focus on UI/UX, making it perfect for her portfolio.
-
-***
-```markdown
 # 🏡 DreamHome Analytics & Price Predictor
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)
@@ -61,5 +42,64 @@ Follow these steps to get the project up and running on your local machine:
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/Chinmayeeavancha/dreamhome-analytics.git
+git clone [https://github.com/Chinmayeeavancha/dreamhome-analytics.git](https://github.com/Chinmayeeavancha/dreamhome-analytics.git)
 cd dreamhome-analytics
+```
+
+### 2. Install Dependencies
+Make sure you have Python installed, then install the required packages:
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Generate the Dataset
+Run the data generator to create the `real_estate_data.csv` file:
+```bash
+python generate_data.py
+```
+
+### 4. Train the Machine Learning Model
+Train the Random Forest model and save it as a `.pkl` file:
+```bash
+python train_model.py
+```
+
+### 5. Launch the Web App
+Start the Streamlit UI dashboard:
+```bash
+streamlit run app.py
+```
+*The app will automatically open in your default web browser at `http://localhost:8501`.*
+
+---
+
+## 📁 Project Structure
+```text
+dreamhome_analytics/
+│
+├── requirements.txt       # Python dependencies
+├── generate_data.py       # Script to generate realistic mock real estate data
+├── train_model.py         # Script to train and save the Random Forest model
+├── app.py                 # Main Streamlit application (Frontend/UI)
+├── real_estate_data.csv   # Generated dataset (created after step 3)
+└── house_price_model.pkl  # Serialized ML model (created after step 4)
+```
+
+---
+
+## 💡 Future Roadmap
+- [ ] Connect to a live real estate API (like Zillow or Redfin) for real-time data.
+- [ ] Add a "Dark Mode" toggle for better accessibility.
+- [ ] Implement advanced EDA profiling (e.g., correlation heatmaps).
+- [ ] Expand prediction inputs to include neighborhood safety scores and school district ratings.
+
+---
+
+## 👩‍💻 Author
+
+**Chinmayee Avancha**  
+* Undergraduate Computer Science Engineering Student  
+* Aspiring UI/UX Designer & Data Analyst  
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/chinmayee-avancha)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=flat&logo=github)](https://github.com/Chinmayeeavancha)
